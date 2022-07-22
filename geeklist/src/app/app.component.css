@@ -1,0 +1,13 @@
+
+@import url('bootstrap-icons/font/bootstrap-icons.css');
+html , body {
+    width: 100%;
+    height: 100%;
+background: #222d32 !important;
+
+}
+
+.selected {
+    font-weight: bold;
+    text-decoration:underline ;
+}

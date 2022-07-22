@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Lista de Series, filmes e animes</title>
+    </head>
+    <body>
+      <nav class="navbar  navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <img  class="navbar-brand" href="#" src="./assets/logo_list_blue_no_back.png" alt="Sua lista preferida" height="60px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/home" routerLinkActive="selected">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"routerLink="/cadastroproduto" routerLinkActive="selected">Cadastro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"routerLink="/listaproduto" routerLinkActive="selected">Categorias</a>
+                </li>
+
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item dropstart ">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-person-circle"></i>
+
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <li><a class="dropdown-item" routerLink="/signup">novo</a></li>
+                      <li><a class="dropdown-item" routerLink="/login">Entrar</a></li>
+                      <li><a class="dropdown-item" href="#">detalhes</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+
+            <router-outlet></router-outlet>
+        <footer class = "bg-secondary pt-3 ps-5 pe-5 pb-3">
+            <h3> GeekList </h3>
+            <p><strong><em>Nunca mais esqueça seus filmes, series, animes, mangás que você ja leu ou assistiu</em></strong> </p>
+            <p class="text-center">
+                <strong>2022</strong>
+            </p>
+        </footer>
+    </body>
+</html>
